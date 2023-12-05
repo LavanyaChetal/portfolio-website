@@ -18,15 +18,17 @@ body, html {
 
 /* Full height image header */
  
- .bgimg-1 {
+  .bgimg-1 {
   background-position: center;
-  background-size: cover;
-  background-image: url(imagess//Lavanya_banner.png);
+  background-size: 100% 100%; /* Updated property for adjusting to the screen */
+  background-image: url(imagess/Lavanya_banner.png);
   margin-right: auto;
   margin-left: auto;
-  min-width: 100%;
-  min-height: 100vh;
+  min-inline-size: -webkit-fill-available;
+  min-width: auto;
+  min-height: 100%;
 }
+
 
 
 .w3-bar .w3-button {
