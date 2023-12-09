@@ -7,14 +7,12 @@
 <link rel="stylesheet" href="photo.css">
 <link rel="stylesheet" href="photogr.css">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-quarter img{margin-bottom: -6px; cursor: pointer}
-.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+body, h1, h2, h3, h4, h5 { font-family: "Raleway", sans-serif; }
+.w3-quarter img { margin-bottom: -6px; cursor: pointer; }
+.w3-quarter img:hover { opacity: 0.6; transition: 0.3s; }
 </style>
 </head>
 <body class="w3-light-grey">
-
-
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
@@ -27,29 +25,27 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
-  
+
   <!-- Photo grid -->
   <div class="w3-row w3-grayscale-min">
     <div class="w3-quarter">
-      <img src="imagess/Screenshot 2023-12-05 014434.png" style="width:100%" onclick="onClick(this)" >
-      
+      <img src="imagess/Screenshot 2023-12-05 014434.png" style="width:100%" onclick="onClick(this)">
    </div>
     <div class="w3-quarter">
-      
-      <img src="imagess/Screenshot 2023-12-05 014452.png" style="width:100%" onclick="onClick(this)" >
-      
+      <img src="imagess/Screenshot 2023-12-05 014452.png" style="width:100%" onclick="onClick(this)">
    </div>
    <div class="w3-quarter">
-      
-      <img src="imagess/Screenshot 2023-12-05 002119.png" style="width:100%" onclick="onClick(this)" >
+      <img src="imagess/Screenshot 2023-12-05 002119.png" style="width:100%" onclick="onClick(this)">
    </div>
    <div class="w3-quarter">
-      
-      <video src="imagess/0001-0300.mp4" style="width:100%" onclick="onClick(this)" >
+      <video controls poster="path/to/poster-image.jpg" style="width:100%" onclick="onClick(this)">
+        <source src="imagess/0001-0300.mp4" type="video/mp4">
+        
+      </video>
    </div>
- 
-  
-  <!-- Modal for full size images on click-->
+  </div>
+
+  <!-- Modal for full-size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
@@ -57,10 +53,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <p id="caption"></p>
     </div>
   </div>
-
- 
-
- 
 
 <!-- End page content -->
 </div>
@@ -84,9 +76,7 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 </script>
-
 
 </body>
 </html>
