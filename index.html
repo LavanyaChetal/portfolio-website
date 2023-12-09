@@ -128,5 +128,152 @@
 </div>
 
 <!-- Work Section -->
-<div class="w3-container" id="work">
-  <h3 class="w3
+
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">MY WORK</h3>
+  
+    <div class="w3-section w3-bottombar w3-padding-16">
+    
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-camera w3-margin-right"><a href="photography.html" >Photography</a></i></button>
+      <button class="w3-button w3-white "><i class="fa fa-phone w3-margin-right"><a href="app.html" >App</a></i></button>
+      <button class="w3-button w3-white "><i class="fa fa-map-pin w3-margin-right"><a href="art.html" >Art</a></i></button>
+      <button class="w3-button w3-white "><i class="fa fa-pencil w3-margin-right"><a href="3d.html" >3D Modelling</a></i></button>
+    </div>
+
+    <!-- First Photo Grid-->
+  
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagess/handle_with_care.JPG" alt="N" style="width:75%" class="w3-hover-opacity">
+      
+      <div class="w3-container w3-white">
+        <p><b>Sun Set</b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagess/red_flower.JPG" alt="Cherry Blossoms?" style="width:75%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Cherry Blossoms?</b></p>
+        
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="imagess/foodafy app.png" alt="" style="width:75%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>foodafy app</b></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagess/DSC_9008.JPG" alt="" style="width:75%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b> Skater boy</b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagess/IMG_0096.JPG" alt="" style="width:75%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Shiny trains</b></p>
+        <p>.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="imagess/IMG_0092.JPG" alt="" style="width:75%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b> Walking in the sun</b></p>
+        <p>.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p></p>
+      <p></p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Graphic Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+      
+      <p class="w3-wide"><i class="fa fa-game w3-margin-right"></i>Game Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">60%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <p><a href="https://www.instagram.com/lvavnyv__/"><i class="fa fa-instagram w3-hover-opacity"> </i></p></a>
+    <p><a href="https://www.behance.net/lavanyachetal"><i class="fa fa-behance w3-hover-opacity"></i></p></a>
+    <p><a href="https://www.linkedin.com/in/lavanya-chetal-50bb50221/"><i class="fa fa-linkedin w3-hover-opacity"></i></p></a>
+  </div>
+  <p>Powered by Github</p>
+  <p>Coded & Designed by Lavanya Chetal</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+fix it for easy view on smaller screens
