@@ -1,101 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Lavanya Chetal</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="s.css">
-  <link rel="stylesheet" href="h.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body, h1, h2, h3, h4, h5, h6 {
-      font-family: "Raleway", sans-serif;
-    }
+<title>Lavanya Chetal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    body, html {
-      height: 100%;
-      line-height: 1.8;
-    }
+<link rel="stylesheet" href="s.css">
+<link rel="stylesheet" href="h.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover; /* Use cover instead of 100% 100% for better responsiveness */
-      background-image: url(imagess/Lavanya_banner.png);
-      height: 100vh; /* Full height of the viewport */
-    }
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-    .w3-bar .w3-button {
-      padding: 14px; /* Adjusted padding for smaller screens */
-    }
+/* Full height image header */
+ 
+  .bgimg-1 {
+  background-position: center;
+  background-size: 100% 100%; /* Updated property for adjusting to the screen */
+  background-image: url(imagess/Lavanya_banner.png);
+  margin-right: auto;
+  margin-left: auto;
+  min-inline-size: -webkit-fill-available;
+  min-width: auto;
+  min-height: 100%;
+}
 
-    .w3-modal-content {
-      max-width: 100%; /* Ensure the modal content doesn't overflow on smaller screens */
-    }
 
-    /* Adjusted padding for smaller screens */
-    .w3-display-bottomleft,
-    .w3-display-bottomleft.w3-text-black.w3-large {
-      padding: 12px 24px;
-    }
 
-    /* Adjusted padding for smaller screens */
-    #about {
-      padding: 64px 16px;
-    }
-
-    /* Adjusted padding for smaller screens */
-    #work {
-      padding: 64px 16px;
-    }
-
-    /* Adjusted padding for smaller screens */
-    .w3-padding-64 {
-      padding: 64px;
-    }
-
-    /* Adjusted padding for smaller screens */
-    .w3-padding-16 {
-      padding: 16px;
-    }
-
-    /* Adjusted margin for smaller screens */
-    .w3-margin-bottom {
-      margin-bottom: 16px;
-    }
-
-    /* Adjusted width for smaller screens */
-    .w3-third {
-      width: 100%;
-    }
-
-    /* Adjusted margin for smaller screens */
-    .w3-container.w3-margin-bottom {
-      margin-bottom: 16px;
-    }
-
-    /* Adjusted margin for smaller screens */
-    .w3-display-container.w3-grayscale-min {
-      margin-bottom: 16px;
-    }
-
-    /* Adjusted padding for smaller screens */
-    footer {
-      padding: 32px 16px;
-    }
-  </style>
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
 </head>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-bar w3-white w3-card" id="myNavbar">
-  <a href="#home" class="w3-bar-item w3-button w3-wide">LC</a>
-  <div class="w3-right w3-hide-small">
-    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LC</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+    
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-    <i class="fa fa-bars"></i>
-  </a>
+    
+    
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+     
+     
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
@@ -103,29 +77,47 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="photography.html" onclick="w3_close()" class="w3-bar-item w3-button">Photography</a>
+  <a href="photography.html" onclick="w3_close()" class="w3-bar-item w3-button" >Photography</a>
   <a href="app.html" onclick="w3_close()" class="w3-bar-item w3-button">App</a>
   <a href="art.html" onclick="w3_close()" class="w3-bar-item w3-button">Art</a>
   <a href="3d.html" onclick="w3_close()" class="w3-bar-item w3-button">3D Modelling</a>
+  
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-text-black w3-large">
-    <p><a href="https://www.instagram.com/lvavnyv__/"><i class="fa fa-instagram w3-hover-opacity"></i></a></p>
-    <p><a href="https://www.behance.net/lavanyachetal"><i class="fa fa-behance w3-hover-opacity"></i></a></p>
-    <p><a href="https://www.linkedin.com/in/lavanya-chetal-50bb50221/"><i class="fa fa-linkedin w3-hover-opacity"></i></a></p>
+ 
+  
+    
+    
+    
+  </div> 
+  <div class="w3-display-bottomleft w3-text-black w3-large" style="padding:24px 48px">
+   
+    
+    <p><a href="https://www.instagram.com/lvavnyv__/"><i class="fa fa-instagram w3-hover-opacity"> </i></p></a>
+   
+    <p><a href="https://www.behance.net/lavanyachetal"><i class="fa fa-behance w3-hover-opacity"></i></p></a>
+     
+    <p><a href="https://www.linkedin.com/in/lavanya-chetal-50bb50221/"><i class="fa fa-linkedin w3-hover-opacity"></i></p></a>
   </div>
 </header>
 
 <!-- About Section -->
-<div class="w3-container" id="about">
+<div class="w3-container" style="padding:128px 16px" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <div style="display: flex; align-items: center;">
-    <img src="imagess/1 day photo.jpg" class="w3-round w3-image" alt="Table Setting" width="100%" height="auto" style="margin-right: 20px;">
-    <p class="w3-large w3-left w3-center">Lavanya Chetal is a dynamic professional with a Bachelor of Science in Game Design and a minor in Photography from DePaul University. With a strong educational foundation, Lavanya possesses a diverse set of skills, including data analysis, data forecasting, machine learning, coding, web development, and design. She is proficient in various software tools such as Blender, Canva, Photoshop, and the Google and Microsoft Suites. Lavanya is well-versed in coding languages, including Python, HTML, CSS, SQL, and JavaScript. Her graphic skills extend to certified graphic design, art, photography, story writing, game design, animation, typography, and calligraphy. She brings leadership and teamwork skills to the table, fostering a positive work environment and showcasing her dedication as a hard worker. Lavanya is not only an adept technical professional but also a creative mind with a passion for crafting compelling visual experiences.</p>
+    <img src="imagess/1 day photo.jpg" class="w3-round w3-image" alt="Table Setting" width="500" height="auto" style="margin-right: 20px;">
+    <p class="w3-large w3-left w3-center">Lavanya Chetal is a dynamic professional with a Bachelor of Science in Game Design and a minor in Photography from DePaul University. With a strong educational foundation, Lavanya possesses a diverse set of skills, including data analysis, data forecasting, machine learning, coding, web development, and design. She is proficient in various software tools such as Blender, Canva, Photoshop, and the Google and Microsoft Suites. Lavanya is well-versed in coding languages, including Python, HTML, CSS, SQL, and JavaScript. Her graphic skills extend to certified graphic design, art, photography, story writing, game design, animation, typography, and calligraphy. She brings leadership and teamwork skills to the table, fostering a positive work environment and showcasing her dedication as a hard worker. Lavanya is not only an adept technical professional but also a creative mind with a passion for crafting compelling visual experiences.
+    </p>
   </div>
 </div>
+
+
+
+
+
+
 
 <!-- Work Section -->
 
@@ -276,4 +268,3 @@ function w3_close() {
 
 </body>
 </html>
-fix it for easy view on smaller screens
